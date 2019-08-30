@@ -99,11 +99,10 @@ The last but not the least, by these experiments, we can prove that the combinat
 [2] Balazs Kegl. Open problem: A (missing) boosting-type convergence result for adaboost.mh with factorized multi-class classifiers. In Maria-Florina Balcan, Vitaly Feldman, and Csaba Szepesvari, editors, Proceedings of The 27th Conference on Learning Theory, COLT 2014, Barcelona, Spain, June 13-15, 2014, volume 35 of JMLR Workshop and Conference Proceedings, pages 1268{1275. JMLR.org, 2014.
 [Download Here](http://proceedings.mlr.press/v35/kegl14.pdf)   
 
-[3] Balazs Kegl and Robert Busa-Fekete. Boosting products of base classifiers. In Andrea Pohoreckyj Danyluk, Leon Bottou, and Michael L. Littman, editors, Proceedings of the 26th Annual International Conference on Machine Learning, ICML 2009, Montreal, Quebec, Canada, June 14-18, 2009, volume 382 of ACM International Conference Proceeding Series, pages 497-504. ACM, 2009.
-[Download Here]()    
+[3] Balazs Kegl and Robert Busa-Fekete. Boosting products of base classifiers. In Andrea Pohoreckyj Danyluk, Leon Bottou, and Michael L. Littman, editors, Proceedings of the 26th Annual International Conference on Machine Learning, ICML 2009, Montreal, Quebec, Canada, June 14-18, 2009, volume 382 of ACM International Conference Proceeding Series, pages 497-504. ACM, 2009.    
 
 [4] Robert E. Schapire and Yoram Singer. Improved boosting algorithms using confidence-rated predictions. Machine Learning, 37(3):297-336, 1999.
 [Download Here](https://link.springer.com/content/pdf/10.1023/A:1007614523901.pdf)   
 
-[5] Ian H. Witten, Eibe Frank, and Mark A. Hall. Data Mining: Practical Machine Learning Tools and Techniques. Morgan Kaufmann, Burlington, MA, 3 edition, 2011.
-[Download Here]()   
+[5] Ian H. Witten, Eibe Frank, and Mark A. Hall. Data Mining: Practical Machine Learning Tools and Techniques. Morgan Kaufmann, Burlington, MA, 3 edition, 2011.    
+
