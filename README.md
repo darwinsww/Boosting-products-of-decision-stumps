@@ -86,16 +86,15 @@ javac -classpath "/home/ubuntu/ml/lib-stable-3-8-2/*" -d ./out/production/Boosti
 - Package:  
 ```
 cd ~/ml/Boosting_products_of_decision_stumps
-jar -cvf ./out/production/Boosting_products_of_decision_stumps/KMeansImageFilter.jar ./out/production/K-means_Clustering/weka/filters/unsupervised/attribute/*.class
+jar -cvf ./out/production/Boosting_products_of_decision_stumps/BoostingProductsOfDecisionStumps.jar ./out/production/Boosting_products_of_decision_stumps/weka/classifiers/meta/*.class
 ``` 
 
 
 ## Experiments
 A lot of experiments had been done, following is an example command runs the test:   
 ```
-cd
-
-java -Xmx12g -cp "/home/ubuntu/ml/lib-stable-3-8/*:." weka.Run .AdaBoostMH -t ./data/pendigits-train.arff -T ./data/pendigits-test.arff -I 500 -M 3 >> ./output/pendigits/pendigits-I500M3 &
+cd ~/ml/Boosting_products_of_decision_stumps
+java -Xmx12g -cp "/home/ubuntu/ml/lib-stable-3-8-2/*:/home/ubuntu/ml/Boosting_products_of_decision_stumps/out/production/Boosting_products_of_decision_stumps" weka.Run .AdaBoostMH -t ./data/pendigits-train.arff -T ./data/pendigits-test.arff -I 500 -M 3 >> ./output/pendigits/pendigits-I500M3 &
 ```
 
 ## Results
