@@ -51,13 +51,32 @@ sudo apt-get install libxtst-dev
 
 ## Compile & Package
 - Create Folders:   
+```
+mkdir -p ~/ml
+
+cd ml
+mkdir -p lib-stable-3-8-2
+mkdir -p weka-3-8-2
+mkdir -p Boosting_products_of_decision_stumps
+
+cd Boosting_products_of_decision_stumps
+mkdir -p ./data
+mkdir -p ./src/weka/classifiers/meta
+mkdir -p ./out/weka/classifiers/meta
+```
 
 
 - Copy Files:   
-
+Copy ```"netlibNativeLinux1.0.2.zip"``` to the folder ```"~/ml/netlibNativeLinux1.0.2"```   
+Copy ```"weka-3-8-2.zip"``` to the folder ```"~/ml/weka-3-8-2"```   
+Copy ```"mtj.jar"``` and ```"weka.jar"``` to the folder ```"~/ml/lib-stable-3-8-2"```      
+Copy ```"pendigits-train.arff"``` and ```"pendigits-test.arff"``` to the folder ```"~/ml/Boosting_products_of_decision_stumps/data"```     
 
 - Extraction:   
-
+```
+cd ~/ml/weka-3-8-2
+unzip weka-3-8-2.zip
+```
 
 - Compile:  
 
