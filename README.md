@@ -44,10 +44,19 @@ Downlard ```"waka-x.x.x.zip"``` in the section ```"Other platforms (Linux, etc.)
 Unzip the zip file and you will find the necessary jar packages. Here used the ```"weka-3-8-2.zip"```.  
 
 - libxtst-dev 
-  ![image]()
+  ![image](https://github.com/darwinsww/Boosting_products_of_decision_stumps/blob/master/img/libxtst-dev.png)
 ```
 sudo apt-get install libxtst-dev
 ```
+
+
+## Results
+Several experiments have been conducted to test the performance of boosting products of decision stumps. The arff files with large amounts of features are the inputs, and the outputs are the classfications for each instance. In these experiments, I used 5 different classification problems (PENDIGITS, ISOLET, LETTER, USPS, and MNIST) with difierent parameter settings for each of them. The explanations of the parameters are as follows:   
+-I: number of base learners h(x) in AdaBoost.MH, which also specifies the number of iterations boosting needs to perform to perform.  
+-m: number of base learners in product learner, which specifies the size of product to use for the base classifiers.   
+
+For comparison, I implemented at least 30 experiments with dierent combinations of I = 10, 50, 100, 500, 1000, 2000 and m = 1, 3, 5, 10, 30 for the 5 problems each. Some addtional tests for PENDIGITS when T = 5000, while tests of MNIST are not accomplished when T = 2000 due to memory limitation.  
+By the experiments, the results are demonstrated in the following tables, which were generated using WEKA[5].  
 
 ## References
 [1] Djalel Benbouzid, Robert Busa-Fekete, Norman Casagrande, Francois-David Collin, and Balazs Kegl. MULTIBOOST: A multi-purpose boosting package. Journal of Machine Learning Research, 13:549-553, 2012.
