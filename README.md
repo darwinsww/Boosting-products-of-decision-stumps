@@ -94,6 +94,7 @@ jar -cvf ./out/production/Boosting_products_of_decision_stumps/BoostingProductsO
 A lot of experiments had been done, following is an example command runs the test:   
 ```
 cd ~/ml/Boosting_products_of_decision_stumps
+# Use absolute path both in the classpath and the data file path
 java -Xmx12g -cp "/home/ubuntu/ml/lib-stable-3-8-2/*:/home/ubuntu/ml/Boosting_products_of_decision_stumps/out/production/Boosting_products_of_decision_stumps" weka.Run .AdaBoostMH -t ./data/pendigits-train.arff -T ./data/pendigits-test.arff -I 500 -M 3 >> pendigits-I500M3 &
 ```
 
