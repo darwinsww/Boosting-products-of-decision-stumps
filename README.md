@@ -49,6 +49,26 @@ Unzip the zip file and you will find the necessary jar packages. Here used the `
 sudo apt-get install libxtst-dev
 ```
 
+## Compile & Package
+- Create Folders:   
+
+
+- Copy Files:   
+
+
+- Extraction:   
+
+
+- Compile:  
+
+
+- Package:  
+
+
+## Experiments
+A lot of experiments had been done, following is an example command runs the test:
+
+
 
 ## Results
 Several experiments have been conducted to test the performance of boosting products of decision stumps. The arff files with large amounts of features are the inputs, and the outputs are the classfications for each instance. In these experiments, I used 5 different classification problems (PENDIGITS, ISOLET, LETTER, USPS, and MNIST) with difierent parameter settings for each of them. The explanations of the parameters are as follows:   
