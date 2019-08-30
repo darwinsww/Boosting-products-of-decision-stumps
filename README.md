@@ -65,9 +65,7 @@ mkdir -p ./src/weka/classifiers/meta
 mkdir -p ./out/weka/classifiers/meta
 ```
 
-
 - Copy Files:   
-Copy ```"netlibNativeLinux1.0.2.zip"``` to the folder ```"~/ml/netlibNativeLinux1.0.2"```   
 Copy ```"weka-3-8-2.zip"``` to the folder ```"~/ml/weka-3-8-2"```   
 Copy ```"mtj.jar"``` and ```"weka.jar"``` to the folder ```"~/ml/lib-stable-3-8-2"```      
 Copy ```"pendigits-train.arff"``` and ```"pendigits-test.arff"``` to the folder ```"~/ml/Boosting_products_of_decision_stumps/data"```     
@@ -79,9 +77,17 @@ unzip weka-3-8-2.zip
 ```
 
 - Compile:  
-
+```
+cd ~/ml/Boosting_products_of_decision_stumps
+# Use absolute path in the classpath
+javac -classpath "/home/ubuntu/ml/lib-stable-3-8-2/*" -d ./out/production/Boosting_products_of_decision_stumps ./src/weka/classifiers/meta/*.java
+```
 
 - Package:  
+```
+cd ~/ml/Boosting_products_of_decision_stumps
+jar -cvf ./out/production/Boosting_products_of_decision_stumps/KMeansImageFilter.jar ./out/production/K-means_Clustering/weka/filters/unsupervised/attribute/*.class
+``` 
 
 
 ## Experiments
