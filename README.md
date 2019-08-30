@@ -62,7 +62,7 @@ mkdir -p Boosting_products_of_decision_stumps
 cd Boosting_products_of_decision_stumps
 mkdir -p ./data
 mkdir -p ./src/weka/classifiers/meta
-mkdir -p ./out/weka/classifiers/meta
+mkdir -p ./out/production/Boosting_products_of_decision_stumps
 ```
 
 - Copy Files:   
