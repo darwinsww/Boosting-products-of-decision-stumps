@@ -56,7 +56,21 @@ Several experiments have been conducted to test the performance of boosting prod
 -m: number of base learners in product learner, which specifies the size of product to use for the base classifiers.   
 
 For comparison, I implemented at least 30 experiments with dierent combinations of I = 10, 50, 100, 500, 1000, 2000 and m = 1, 3, 5, 10, 30 for the 5 problems each. Some addtional tests for PENDIGITS when T = 5000, while tests of MNIST are not accomplished when T = 2000 due to memory limitation.  
+
 By the experiments, the results are demonstrated in the following tables, which were generated using WEKA[5].  
+
+### Accuracy
+Regarding all the results, all the date sets have good accuracy (around 95%), when I = 1000 and m = 5. However, compared to the output of the C++ implementation of MultiBoost[4], there is still room for improvement of mine.
+![image](https://github.com/darwinsww/Boosting_products_of_decision_stumps/blob/master/img/Accuracy.png)
+
+## Conclusions
+According to the researches above, we can draw a conclusion that:  
+
+1. In most situations, the bigger m is, the higher accuracy we could get. However, with the increasing of m, the accuracy will not increase indefinitely. This is because the product learners are always converged before m base learners are all executed. So, there is no need to enlarge m continually in the experiments.  
+
+2. It is obvious that more iterations would lead to higher accuracies in all the data sets. The reason is that one base learner, generated in each iteration, is prone to process the data with wrong classifications. So, theoretically, we could add more base learners to get better performace.   
+
+The last but not the least, by these experiments, we can prove that the combination of Adaboost.MH and product learner with decision stumps could dramatically enhance the performance of individual base learner.
 
 ## References
 [1] Djalel Benbouzid, Robert Busa-Fekete, Norman Casagrande, Francois-David Collin, and Balazs Kegl. MULTIBOOST: A multi-purpose boosting package. Journal of Machine Learning Research, 13:549-553, 2012.
