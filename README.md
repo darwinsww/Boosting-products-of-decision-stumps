@@ -55,7 +55,7 @@ Several experiments have been conducted to test the performance of boosting prod
 -I: number of base learners h(x) in AdaBoost.MH, which also specifies the number of iterations boosting needs to perform to perform.  
 -m: number of base learners in product learner, which specifies the size of product to use for the base classifiers.   
 
-For comparison, I implemented at least 30 experiments with dierent combinations of I = 10, 50, 100, 500, 1000, 2000 and m = 1, 3, 5, 10, 30 for the 5 problems each. Some addtional tests for PENDIGITS when T = 5000, while tests of MNIST are not accomplished when T = 2000 due to memory limitation.  
+For comparison, I implemented at least 30 experiments with different combinations of I = 10, 50, 100, 500, 1000, 2000 and m = 1, 3, 5, 10, 30 for the 5 problems each. Some addtional tests for PENDIGITS when T = 5000, while tests of MNIST are not accomplished when T = 2000 due to memory limitation.  
 
 By the experiments, the results are demonstrated in the following tables, which were generated using WEKA[5].  
 
