@@ -54,7 +54,7 @@ sudo apt-get install libxtst-dev
 ```
 mkdir -p ~/ml
 
-cd ml
+cd ~/ml
 mkdir -p lib-stable-3-8-2
 mkdir -p weka-3-8-2
 mkdir -p Boosting_products_of_decision_stumps
