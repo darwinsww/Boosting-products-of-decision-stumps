@@ -16,6 +16,39 @@ single split) or, alternatively, depth-limited decision trees. Decision trees su
 - [usps-test](https://www.cs.waikato.ac.nz/ml/521/old/2018/assignment2/usps-test.arff)
 - [usps-train](https://www.cs.waikato.ac.nz/ml/521/old/2018/assignment2/usps-train.arff)
 
+## System Environment
+- OS - Ubuntu 18.04 on AWS EC2 
+```
+ubuntu@ip-172-31-8-70:~/ml/weka-3-8-2$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.2 LTS
+Release:	18.04
+Codename:	bionic
+
+ubuntu@ip-172-31-8-70:~/ml/weka-3-8-2$ uname -a
+Linux ip-172-31-8-70 4.15.0-1044-aws #46-Ubuntu SMP Thu Jul 4 13:38:28 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+```
+
+- JAVA
+```
+ubuntu@ip-172-31-8-70:~/ml/weka-3-8-2$ java -version
+java version "1.8.0_171"
+Java(TM) SE Runtime Environment (build 1.8.0_171-b11)
+Java HotSpot(TM) 64-Bit Server VM (build 25.171-b11, mixed mode)
+```
+
+## Dependencies
+- [Weka](https://www.cs.waikato.ac.nz/ml/weka/downloading.html)  
+Downlard ```"waka-x.x.x.zip"``` in the section ```"Other platforms (Linux, etc.)"```.   
+Unzip the zip file and you will find the necessary jar packages. Here used the ```"weka-3-8-2.zip"```.  
+
+- libxtst-dev 
+  ![image]()
+```
+sudo apt-get install libxtst-dev
+```
+
 ## References
 [1] Djalel Benbouzid, Robert Busa-Fekete, Norman Casagrande, Francois-David Collin, and Balazs Kegl. MULTIBOOST: A multi-purpose boosting package. Journal of Machine Learning Research, 13:549-553, 2012.
 
