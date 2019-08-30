@@ -91,9 +91,12 @@ jar -cvf ./out/production/Boosting_products_of_decision_stumps/KMeansImageFilter
 
 
 ## Experiments
-A lot of experiments had been done, following is an example command runs the test:
+A lot of experiments had been done, following is an example command runs the test:   
+```
+cd
 
-
+java -Xmx12g -cp "/home/ubuntu/ml/lib-stable-3-8/*:." weka.Run .AdaBoostMH -t ./data/pendigits-train.arff -T ./data/pendigits-test.arff -I 500 -M 3 >> ./output/pendigits/pendigits-I500M3 &
+```
 
 ## Results
 Several experiments have been conducted to test the performance of boosting products of decision stumps. The arff files with large amounts of features are the inputs, and the outputs are the classfications for each instance. In these experiments, I used 5 different classification problems (PENDIGITS, ISOLET, LETTER, USPS, and MNIST) with difierent parameter settings for each of them. The explanations of the parameters are as follows:   
